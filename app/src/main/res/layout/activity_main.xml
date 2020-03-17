@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/show_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/do_keydown_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doKeyDownCmd"
+        android:text="doKeyDownCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/show_content"/>
+
+    <Button
+        android:id="@+id/do_keyup_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doKeyUpCmd"
+        android:text="doKeyUpCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/do_keydown_cmd"/>
+
+    <Button
+        android:id="@+id/do_keyback_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doKeyBackCmd"
+        android:text="doKeyBackCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/do_keyup_cmd"/>
+
+    <Button
+        android:id="@+id/do_key_show_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doKeyShowFloatRobotCmd"
+        android:text="doKeyShowFloatRobotCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/do_keyback_cmd"/>
+
+
+    <Button
+        android:id="@+id/do_key_hide_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doKeyHideFloatRobotCmd"
+        android:text="doKeyHideFloatRobotCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/do_key_show_cmd"/>
+
+
+    <Button
+        android:id="@+id/do_is_show_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doIsFloatRobotShowCmd"
+        android:text="doIsFloatRobotShowCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/do_key_hide_cmd"/>
+
+    <Button
+        android:id="@+id/do_enter_wakeup_mode_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doKeyEnterWakeupModeCmd"
+        android:text="doKeyEnterWakeupModeCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/do_is_show_cmd"/>
+
+
+    <Button
+        android:id="@+id/do_exit_wakeup_mode_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doKeyExitWakeupModeCmd"
+        android:text="doKeyExitWakeupModeCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/do_enter_wakeup_mode_cmd"/>
+
+    <Button
+        android:id="@+id/do_is_wakeup_mode_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doKeyIsWakeupModeCmd"
+        android:text="doKeyIsWakeupModeCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/do_exit_wakeup_mode_cmd"/>
+
+    <Button
+        android:id="@+id/do_switch_elistenspeak_mode_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doKeySwitchElistenSpeakModeCmd"
+        android:text="doKeySwitchElistenSpeakModeCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/do_is_wakeup_mode_cmd"/>
+
+    <Button
+        android:id="@+id/do_switch_knowledgevideo_mode_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doKeySwitchKnowledgeViewModeCmd"
+        android:text="doKeySwitchKnowledgeViewModeCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/do_switch_elistenspeak_mode_cmd"/>
+
+    <Button
+        android:id="@+id/do_switch_languagepoint_mode_cmd"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:onClick="doKeySwitchLanguagePointModeCmd"
+        android:text="doKeySwitchLanguagePointModeCmd"
+        app:layout_constraintLeft_toLeftOf="@id/show_content"
+        app:layout_constraintTop_toBottomOf="@id/do_switch_knowledgevideo_mode_cmd"/>
+
+</android.support.constraint.ConstraintLayout>
